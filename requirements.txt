@@ -1,0 +1,24 @@
+# LangChain Samples - Dependências
+# Instale com: uv pip install -r requirements.txt
+# Ou com pip tradicional: pip install -r requirements.txt
+
+# Framework principal LangChain
+langchain>=1.0.8
+
+# Core do LangChain (mensagens, runnables, etc)
+langchain-core>=1.0.0
+
+# Integração com OpenAI
+langchain-openai>=1.0.3
+
+# Integração com Google
+langchain-google-genai>=1.0.0
+
+# Integração com Anthropic
+langchain-anthropic>=1.0.0
+
+# LangGraph para checkpointer e memória
+langgraph>=1.0.0
+
+# Carregar variáveis de ambiente
+python-dotenv>=1.2.1
