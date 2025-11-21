@@ -74,6 +74,7 @@ O projeto utiliza as seguintes bibliotecas:
 
 - `langchain>=1.0.8` - Framework principal
 - `langchain-openai>=1.0.3` - Integração com OpenAI
+- `langchain-anthropic>=1.0.0` - Integração com Anthropic (Claude)
 - `langchain-core>=1.0.0` - Core do LangChain
 - `langgraph>=1.0.0` - Para checkpointer e memória
 - `python-dotenv>=1.2.1` - Carregar variáveis de ambiente
@@ -161,6 +162,8 @@ LangChainOfficialDocs/
 
 ## 📚 Exemplos Disponíveis
 
+### Agentes (Samples 001-018)
+
 | Arquivo | Descrição | Conceitos |
 |---------|-----------|-----------|
 | **sample001.py** | Agente básico com LangChain | Inicialização básica, system prompt |
@@ -181,6 +184,25 @@ LangChainOfficialDocs/
 | **sample016.py** | Estado customizado via middleware | `AgentMiddleware`, `CustomState`, before_model hooks |
 | **sample017.py** | Estado customizado via state_schema | `state_schema`, campos customizados simples |
 | **sample018.py** | Streaming de respostas | `agent.stream()`, stream_mode, chunks, progresso em tempo real |
+
+### Models - Conceitos Avançados (Samples 019-032)
+
+| Arquivo | Descrição | Conceitos |
+|---------|-----------|-----------|
+| **sample019.py** | Uso direto do Model vs Agentes | `model.invoke()` direto, quando usar cada abordagem |
+| **sample020.py** | Binding manual de tools | `model.bind_tools()`, execução manual de ferramentas |
+| **sample021.py** | Structured output com Pydantic | `model.with_structured_output()`, Pydantic models, TypedDict |
+| **sample022.py** | Multimodal - Imagens | Vision models, URLs, base64, múltiplas imagens |
+| **sample023.py** | Multimodal - Áudio/Vídeo/PDF | Áudio transcription, vídeo analysis, PDF reading |
+| **sample024.py** | Reasoning models | o1-mini, o3-mini, extended thinking, reasoning tokens |
+| **sample025.py** | Métodos de invocação | `invoke()`, `stream()`, `batch()`, comparação de performance |
+| **sample026.py** | Parâmetros do model | temperature, max_tokens, top_p, frequency_penalty, seed |
+| **sample027.py** | Rate limiting | `InMemoryRateLimiter`, controle de taxa de requisições |
+| **sample028.py** | Token usage tracking | `usage_metadata`, custos, `get_usage_metadata_callback()` |
+| **sample029.py** | Invocation config | `RunnableConfig`, tags, metadata, callbacks, run_name |
+| **sample030.py** | Configurable models | `configurable_fields()`, `configurable_alternatives()`, A/B testing |
+| **sample031.py** | Log probabilities | Confiança do modelo, análise de tokens, top logprobs |
+| **sample032.py** | Tool choice control | "auto", "any", "none", specific tool forcing, parallel calls |
 
 ## 🎯 Exemplos de Uso
 
